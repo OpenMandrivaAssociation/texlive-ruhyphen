@@ -77,6 +77,7 @@ Unicode Cyrillic), LCY, LWN (OT2), and koi8-r.
 %doc %{_texmfdistdir}/source/generic/ruhyphen/sorthyph
 %doc %{_texmfdistdir}/source/generic/ruhyphen/sortkoi8
 %doc %{_texmfdistdir}/source/generic/ruhyphen/trans
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -87,3 +88,5 @@ Unicode Cyrillic), LCY, LWN (OT2), and koi8-r.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
