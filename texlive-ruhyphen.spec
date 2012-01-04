@@ -6,7 +6,7 @@
 # catalog-version 1.6
 Name:		texlive-ruhyphen
 Version:	1.6
-Release:	1
+Release:	2
 Summary:	Russian hyphenation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/ruhyphen
