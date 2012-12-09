@@ -78,3 +78,17 @@ Unicode Cyrillic), LCY, LWN (OT2), and koi8-r.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
++ Revision: 755780
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
++ Revision: 719471
+- texlive-ruhyphen
+- texlive-ruhyphen
+- texlive-ruhyphen
+- texlive-ruhyphen
+
