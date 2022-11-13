@@ -1,18 +1,12 @@
-# revision 21081
-# category Package
-# catalog-ctan /language/hyphenation/ruhyphen
-# catalog-date 2007-01-14 10:43:12 +0100
-# catalog-license lppl
-# catalog-version 1.6
 Name:		texlive-ruhyphen
-Version:	1.6
-Release:	11
+Version:	21081
+Release:	1
 Summary:	Russian hyphenation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/ruhyphen
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ruhyphen.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ruhyphen.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ruhyphen.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ruhyphen.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ number of Cyrillic font encodings, including T2, UCY (Omega
 Unicode Cyrillic), LCY, LWN (OT2), and koi8-r.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -71,24 +65,10 @@ Unicode Cyrillic), LCY, LWN (OT2), and koi8-r.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
-+ Revision: 755780
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
-+ Revision: 719471
-- texlive-ruhyphen
-- texlive-ruhyphen
-- texlive-ruhyphen
-- texlive-ruhyphen
-
