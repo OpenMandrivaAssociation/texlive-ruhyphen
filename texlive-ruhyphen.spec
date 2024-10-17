@@ -3,7 +3,7 @@ Version:	21081
 Release:	2
 Summary:	Russian hyphenation
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/hyphenation/ruhyphen
+URL:		https://www.ctan.org/tex-archive/language/hyphenation/ruhyphen
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ruhyphen.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ruhyphen.source.r%{version}.tar.xz
